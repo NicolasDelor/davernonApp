@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <SearchView
+            android:id="@+id/cardListSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Compétence..." />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allFilterMindSet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="allFilterMindSetTapped"
+                android:text="All" />
+
+            <ImageView
+                android:id="@+id/concentrationFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="concentrationFilterTapped"
+                android:text="Triangle" />
+
+            <ImageView
+                android:id="@+id/pacifiqueFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="pacifiqueFilterTapped"
+                android:text="Square" />
+
+            <ImageView
+                android:id="@+id/balancedFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="balancedFilterTapped"
+                android:text="Octagon" />
+
+            <ImageView
+                android:id="@+id/fureurFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="fureurFilterTapped"
+                android:text="Rectangle" />
+
+            <ImageView
+                android:id="@+id/sournoiserieFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="sournoiserieFilterTapped"
+                android:text="Circle" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:id="@+id/allFilterStance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="allFilterStanceTapped"
+                android:text="All" />
+
+            <ImageView
+                android:id="@+id/aDistanceFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="aDistanceFilterTapped" />
+
+            <ImageView
+                android:id="@+id/auContactFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="auContactFilterTapped" />
+
+            <ImageView
+                android:id="@+id/deboutFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="deboutFilterTapped" />
+
+
+            <ImageView
+                android:id="@+id/maintenuAuSolFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="maintenuAuSolFilterTapped" />
+
+            <ImageView
+                android:id="@+id/maintenantAuSolFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="maintenantAuSolFilterTapped" />
+
+            <ImageView
+                android:id="@+id/aGenouxFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="aGenouxFilterTapped" />
+
+            <ImageView
+                android:id="@+id/maintenuDeDosFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="maintenuDeDosFilterTapped" />
+
+            <ImageView
+                android:id="@+id/maintenantDeDosFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="maintenantDeDosFilterTapped" />
+
+            <ImageView
+                android:id="@+id/auSolFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="auSolFilterTapped" />
+
+            <ImageView
+                android:id="@+id/entraveFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="entraveFilterTapped" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/cardsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
